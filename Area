@@ -1,0 +1,20 @@
+#This program calculates the area of a triangle
+print ("Hello again!...now we are gooing to calculate the area of a triangle, to start, please write the size of the base and the height")
+
+def Triangle_area():
+    Base = int (input("Enter the base size: "))
+    Height = int (input("Enter the height size: "))
+    Area_of_triangle = Base * Height/2
+    print (f"The area of the triangle is {Area_of_triangle}")
+    
+Triangle_area()
+
+#This program calculates the area of a square
+print ("And why not?...also the area of a square, please write the sides of the square")
+
+def Square_area():
+    Size = int (input("Enter the size: "))
+    Area_of_square = Size * Size
+    print (f"The area of the square is {Area_of_square}")
+    
+Square_area()
