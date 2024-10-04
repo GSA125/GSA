@@ -1,0 +1,72 @@
+# Initial list of students
+student = ["Axel", "Gilberto", "Alex", "Sam", "Dania", "Zara", "Tanya", "Azahel", "Santiago", "Donovan"]
+
+def display_students():
+    print(f"_____________________________________")
+    print(f"Current students:\n")
+    
+    for element in student:
+        print (element)
+    print(f"_____________________________________") 
+
+    print ("Hello! its been a while...now you need to type a new name, to make the list longer!")
+    new_name = input("")
+    student.append(new_name)
+    for element in student:
+        print (element)
+    
+    print ("Amazing!...now you are going to remove a name, to do that, choose a name to be remove")
+    
+    no_name = input("")
+    student.remove(no_name)
+    for element in student:
+        print (element)
+    
+
+    print ("You are fast!...it s time to remove another name, but now, the last one ")
+    
+    pop_name = student.pop(-1)
+    for element in student:
+        print (element)
+        
+    print ("Someone is missing...lets see ")
+    
+    print (pop_name)
+    
+    print ("We are on the final part, to finish, you need to review the list and check the names, if they are correctly wrritten or if you want to change them. ")
+    
+    current_name = input("")
+    if current_name == True:
+        print ("This name is already here!")
+
+        if current_name == False:
+            print ("This name is not here?...can you added and type who is going to be changed?")
+            
+        else:
+            nc_name = input("")
+            ch_name = input("Axel", "Gilberto", "Alex", "Sam", "Dania", "Zara", "Tanya", "Azahel", "Santiago", "Donovan")
+            alist = (ch_name) (nc_name) 
+            
+    for element in student:
+        print (element)
+        
+            
+            
+    
+    
+# Menu to manage student operations
+def menu():
+    while True:
+        print("\nMenu:")
+        print("1. Add a student")
+        print("2. Remove a student")
+        print("3. Pop a student")
+        print("4. Update a student's name")
+        print("5. Exit")
+        
+        choice = input("Enter your choice: ")
+
+        #TODO depending of the user choice option (1 - 5), call the correct function
+
+# Start the program
+display_students()
