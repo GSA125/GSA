@@ -1,0 +1,78 @@
+
+#TODO
+
+#TODO Project 1: List Creation (5 points)
+import random
+l_list = [1,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
+              51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+choice = input("Hello!, in view that you complete the previous assignments...its time for a most interesting one, to start, do you want to create a list of 10 random integers?(y/n)")
+if choice == ("y"):
+    for element in range(100):
+          l_list = random.random()
+
+n=int(input(10))
+rl_list = (n)
+print(rl_list)
+
+
+
+#TODO Project 2: List Manipulation (7 points)
+
+list_stuff = ["age", "name", "is_student", "total", "my_list", "employee_data", "result", "counter", "file_path", "pi"]
+stuff = input("Type the stuff that you want to add:")
+list_stuff.append(stuff)
+list_stuff.remove(1)
+for element in list_stuff:
+    print (element)
+    
+
+#TODO Project 3: Indexing and Slicing (6 points)
+# Using the list_stuff 
+# Task: Print the first 5 elements and the last 3 elements of the list.
+# Requirements: Use slicing and indexing.
+
+
+
+#TODO Project 4: Looping with Lists (8 points)
+# Task: Use a for loop to find the sum of all the even numbers in the list.
+# Requirements: Apply an if statement within the loop to check for even numbers.
+number_list = [10,12,2,3,5,13,32,23,9]
+
+
+
+#TODO Project 5: List Comprehension Basics (9 points)
+number_list = [10,12,2,3,5,13,32,23,9]
+square = [num*1 for num in number_list if num%2==0]
+print(square)
+
+
+#TODO Project 6: Filtering with List Comprehensions (10 points)
+## Use number_list
+# Task: Create a list that contains only the numbers greater than 15 from the original list, name that list as filtered_list.
+# Requirements: Use a list comprehension with a filtering condition.
+
+#TODO Project 7: List inside a list (10 points)
+
+a = ["1", "5", "25", "125", "625"]
+b = ["20", "30", "40", "50", "60", "70"]
+
+a.insert(3,b)
+print (a) 
+
+#TODO Project 8: loops with Lists (15 points)
+# Task: Write a loop that keeps removing elements from the list until the number_list contains only numbers less than 30.
+# Requirements: Use while, pop(), remove(), del, sort().
+
+#TODO Project 9: Custom Function (15 points)
+# Create a copy of the values from the original number_list, and name it number_list_2
+# Use the list number_list_2
+# Task: Write a function that takes a list and prints a new list with the odd numbers doubled and even numbers unchanged.
+# Requirements: Use list comprehension inside the function, and print().
+number_list_2 = [10,12,2,3,5,13,32,23,9]
+if number_list_2 %2==0:
+    print 
+
+
+#TODO Project 10: List Sorting and Methods (8 points)
+# Task: Sort the number_list_2 in descending order and print the index of the highest and lowest values in the list.
+# Requirements: Use sort(), index(), Hint: look for max() and min () functions.
