@@ -1,0 +1,48 @@
+
+import csv
+
+def load_data(filename):
+    vehicles={}
+    with open(filename, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            vin=row[0]
+            year=row[1]
+            manufacturer=row[2]
+            model=row[3]
+            color=row[4]
+            eng_design=row[5]
+            eng_displace=row[6]
+            vehicles[vin] = [year, manufacturer, model, color, eng_design, eng_displace]
+    return vehicles       
+
+def display_contact_info(vehicle_reg):
+    if vehicle_reg:
+        print("Contact Information:\n")    
+        print(f"Year: {vehicle_reg[0]}")
+        print(f"Manufacturer: {vehicle_reg[1]}")
+        print(f"Model: {vehicle_reg[2]}")
+        print(f"Color: {vehicle_reg[3]}")
+        print(f"Engine design: {vehicle_reg[4]}")
+        print(f"Engine displace: {vehicle_reg[5]}")
+        main()
+    else:
+        print("No information found for this VIN")
+        main()
+
+def main():
+    filename = "VIC file. 2 csv.csv"
+    
+    information = load_data(filename)
+    
+    vin = input("Please enter a VIN to look up: ").strip()
+    vehicle_info = information.get(vin)
+    
+    display_contact_info(vehicle_info)
+    
+main ()
+
+
+
+
+
