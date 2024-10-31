@@ -1,0 +1,36 @@
+#Insert Method
+
+a = ["Master", "Omline", "Website"]
+a.insert(1,"Code")
+for element in a:
+    print (element)
+    
+#2 part, List over List
+
+a = ["1", "5", "25"]
+a = ["50", "60", "70"]
+b = ["20", "30", "40"]
+a.insert(0,b)
+print (a) 
+
+ #Sort Method 
+
+classroom = ["Axel", "Santiago", "Quebec", "Alhelí", "Manfred", "Ximena"]  
+classroom.sort()
+for element in classroom:
+    print (element)
+ 
+ 
+ #2 part, More Arguments
+ 
+classroom = ["Axel", "Santiago", "Quebec", "Alhelí", "Manfred", "Ximena"] 
+classroom.sort(reverse=True)
+for element in classroom:
+    print (element)
+     
+#3 part, Key
+
+classroom = ["Axel", "Santiago", "Quebec", "Alhelí", "Manfred", "Ximena"] 
+classroom.sort(reverse=True, key=len)
+for element in classroom:
+    print (element)

@@ -1,0 +1,41 @@
+groceries = {'fruits': ['mangoes', 'bananas', 'kiwis'],
+            'protein': ['beef', 'pork', 'salmon'],
+            'carbs': ['rice', 'pasta', 'bread'],
+            'veggies': ['lettuce', 'cabbage', 'onions']}
+
+print(groceries)
+
+#2nd part
+
+party_planning = {'Yes': 10,
+                  'No': 15,
+                  'Maybe': 30,
+                  'Location': 'Our Backyard',
+                  'Date': '2022/05/01'}
+
+party_planning['Location']
+
+#3rd part
+
+# @title .update()
+
+shopping_list1 = {'jewelry': 'earrings', 'clothes': 'jeans', 'budget': 200}
+shopping_list2 = {'shoes': 'sandals', 'budget': 350}
+
+# Merge the two dictionaries
+shopping_list1.update(shopping_list2)
+
+print(shopping_list1)
+
+#Get.
+
+# @title .get()
+
+# The key exists
+{"name": "Victor"}.get("name")
+
+# The key doesn't exists
+{"name": "Victor"}.get("nickname")
+
+# The key doesn't exists, but there's a fallback inside the method
+{"name": "Victor"}.get("nickname", "nickname is not a key")

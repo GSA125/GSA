@@ -1,0 +1,15 @@
+#List of fruits
+
+fruits = ["mango", "blueberry", "melon"]
+
+del fruits[2]
+
+print(fruits)
+
+#List of names
+
+names = ["Axel", "Gilberto", "Alex"]
+
+names.append("")
+
+print(names)
