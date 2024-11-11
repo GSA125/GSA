@@ -1,0 +1,44 @@
+import csv
+
+def load_contacts(filename):
+    contacts={}
+    with open(filename, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            Year=row[0]
+            Fatalities=row[1]
+            Injuries=row[2]
+            Crashes=row[3]
+            
+            contacts[Year] = [Year, Fatalities, Injuries, Crashes, ]
+    return contacts       
+            
+def display_contact_info(contact_info):
+    if contact_info:
+        print("Accident information:\n")    
+        print(f"Year: {contact_info[0]}")
+        print(f"Fatalities: {contact_info[1]}")
+        print(f"Injuries: {contact_info[2]}")
+        print(f"Crashes: {contact_info[3]}")
+        print(f"Fatal Crashes: {contact_info[4]}")
+        print(f"Distraction affected fatal crashes: {contact_info[5]}")
+        print(f"Fatal crashes involving CP: {contact_info[6]}")
+        print(f"Fatal crashes involving excessive speed: {contact_info[7]}")
+        print(f"Fatal Crashes while driving under the influence: {contact_info[8]}")
+        print(f"Fatal crashes involving fatigue or illness: {contact_info[9]}")
+        
+    else:
+        print("No information found for this year")
+
+
+def main():
+    filename = "accidents.csv"
+    
+    contacts = load_contacts(filename)
+    
+    last_name = input("Please enter a year to look up: ").strip()
+    contact_info = contacts.get(last_name)
+    
+    display_contact_info(contact_info)
+    
+main ()

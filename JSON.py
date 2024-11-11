@@ -14,7 +14,7 @@ def load_data(filename):
     return students
             
 def main():
-    filename='data.json'
+    filename='accdients.csv'
     yes = load_data(filename)
     
     print ()
