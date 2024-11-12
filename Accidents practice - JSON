@@ -9,13 +9,19 @@ def load_contacts(filename):
             Fatalities=row[1]
             Injuries=row[2]
             Crashes=row[3]
+            Fatal_Crashes=row[4]
+            Distraction_affected=row[5]
+            Fatal_crashes_involving_CP=row[6]
+            Fatal_crasehs_involving_excessive_speed=row[7]
+            Fatal_crashes_while_driving_under_the_influence=row[8]
+            Fatal_crashes_involving_fatigue_or_illness=row[9]
             
-            contacts[Year] = [Year, Fatalities, Injuries, Crashes, ]
+            contacts[Year] = [Year, Fatalities, Injuries, Crashes, Fatal_Crashes, Distraction_affected, Fatal_crashes_involving_CP, Fatal_crasehs_involving_excessive_speed, Fatal_crashes_while_driving_under_the_influence, Fatal_crashes_involving_fatigue_or_illness]
     return contacts       
             
 def display_contact_info(contact_info):
     if contact_info:
-        print("Accident information:\n")    
+        print("Accident information:")    
         print(f"Year: {contact_info[0]}")
         print(f"Fatalities: {contact_info[1]}")
         print(f"Injuries: {contact_info[2]}")
@@ -24,7 +30,7 @@ def display_contact_info(contact_info):
         print(f"Distraction affected fatal crashes: {contact_info[5]}")
         print(f"Fatal crashes involving CP: {contact_info[6]}")
         print(f"Fatal crashes involving excessive speed: {contact_info[7]}")
-        print(f"Fatal Crashes while driving under the influence: {contact_info[8]}")
+        print(f"Fatal crashes while driving under the influence: {contact_info[8]}")
         print(f"Fatal crashes involving fatigue or illness: {contact_info[9]}")
         
     else:
